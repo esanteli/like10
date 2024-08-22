@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/*!---------Reset----------*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Nunito Sans", sans-serif; 
+}
+
+/*!---------Header----------*/
+
+header{
+    background-color:whitesmoke;
+    padding: 10px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 1rem 1rem 1rem 1rem;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    
+
+}
+
+header h1{
+ font-size: 50px;
+ margin: 1rem 0rem 0rem 1rem;
+}
+
+header nav ul{
+    list-style: none;
+    font-style: bold;
+    margin: 1rem 1rem 1rem 1rem;
+    
+
+}
+
+header nav ul li{
+    display: inline-block;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: black
+}
+
+
+/*!---------Fin Header----------*/
+
+
+/*!---------Index----------*/
+
+.boton {
+        background: linear-gradient(to right, #180C36, #361C7A);
+        border: none;
+        border-radius: 12px;
+        color: white;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        transition: background 0.3s ease;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+    
+.boton:hover {
+        background: linear-gradient(to right, #361C7A, #180C36);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+
+.hero {
+    width: 100%;
+    height: 450px;
+    text-align: center;
+    background-image: url(../img/bannerlike10.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: ;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem 0rem 1rem 0rem;
+} 
+
+.hero h3, p{
+    color:aliceblue;
+}
+
+.servicio_index{
+    margin: 1rem 1rem 2rem 2rem;
+}
+
+.servicio_index h3{
+    margin: 1rem 0rem 1rem 0rem;
+}
+
+.servicio_index h3, div{
+    margin: 1rem 0rem 1rem 0rem;
+}
+
+.servicio_index h3, div, h5{
+    margin: 1rem 0rem 1rem 0rem;
+}
+
+.indexh2 {
+    margin:1rem 1rem 2rem 2rem;
+}
+/*!---------Fin Index----------*/
+
+/*!---------Footer----------*/
+
+footer {
+    background-color: antiquewhite;
+    padding: 2rem 2rem 2rem 2rem;
+    margin: 2rem 0rem 2rem 0rem;
+
+}
+
+footer h2 {
+    color: black;
+    margin: 1rem 0rem 2rem 0rem;
+}
+
+.whatsapp{
+position:fixed;
+bottom: 50px;    
+right: 50px;
+}
+
+.whatsapp a img{
+    width: 200%;
+}
+
+
+
+
