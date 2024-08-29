@@ -154,8 +154,19 @@ border-radius: 40px;
 
 .servicio_index h3{
     margin: 1rem 0rem 1rem 0rem;
+    color: rgb(255, 255, 255);
+}
+
+.servicio_index p{
+    margin: 3rem 3rem 1rem 0rem;
     color: gray;
 }
+
+.servicio_index h4{
+    margin: 3rem 0rem 1rem 0rem;
+    color: gray;
+}
+
 
 .servicio_index h3, div{
     margin: 1rem 0rem 1rem 0rem;
@@ -181,13 +192,45 @@ border-radius: 40px;
     width: 1px;
     background-color: #ffffff26;
     transform: translateX(50%);
+  }
+
+.navimg {
+    width: 100%;
+    height: 400px;
+    object-fit: cover; /* Asegura que la imagen cubra el área del contenedor */
+    object-position: center; /* Centra la imagen dentro del contenedor */
+    display: block; /* Asegura que la imagen se muestre como bloque */
+    margin: 2rem 1rem 1rem 0rem;
+
+}
+
 
 /*!---------Fin Servicios Section----------*/
+
+.imgclientes {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Asegura que la imagen cubra el área del contenedor */
+    object-position: center; /* Centra la imagen dentro del contenedor */
+    display: block; /* Asegura que la imagen se muestre como bloque */
+    margin: 2rem 1rem 1rem 0rem;
+
+}
+
+.imgdoblediamante {
+    width: 70%;
+    height: auto;
+    object-fit: cover; /* Asegura que la imagen cubra el área del contenedor */
+    object-position: center; /* Centra la imagen dentro del contenedor */
+    display: block; /* Asegura que la imagen se muestre como bloque */
+    margin: 2rem 1rem 1rem 0rem;
+
+}
 
 /*!---------Footer----------*/
 
 footer {
-    background-color: antiquewhite;
+    background: linear-gradient(135deg, #2c2c2e, #443c4b);
     padding: 2rem 2rem 2rem 2rem;
     margin: 2rem 0rem 2rem 0rem;
 
