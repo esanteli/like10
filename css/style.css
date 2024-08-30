@@ -54,23 +54,24 @@ header img {
 
 .boton {
     background: linear-gradient(135deg, #2c2c2e, #443c4b);
-        border: none;
-        border-radius: 12px;
-        color: white;
-        padding: 10px 20px;
-        font-size: 16px;
-        cursor: pointer;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        transition: background 0.3s ease;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    }
-    
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block; /* Asegura que el botón ocupe solo el ancho del texto */
+    transition: 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-top: 15px; /* Margen superior opcional */
+}
+
 .boton:hover {
-        background: #3a3a3c;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    }
+    background: linear-gradient(135deg, #443c4b, #2c2c2e); /* Efecto hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
 
     /*!---------hero----------*/
 
@@ -201,8 +202,17 @@ border-radius: 40px;
     object-position: center; /* Centra la imagen dentro del contenedor */
     display: block; /* Asegura que la imagen se muestre como bloque */
     margin: 2rem 1rem 1rem 0rem;
+    border-radius: 30px;
 
 }
+
+.boxservicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
 
 
 /*!---------Fin Servicios Section----------*/
@@ -218,7 +228,7 @@ border-radius: 40px;
 }
 
 .imgdoblediamante {
-    width: 70%;
+    width: 60%;
     height: auto;
     object-fit: cover; /* Asegura que la imagen cubra el área del contenedor */
     object-position: center; /* Centra la imagen dentro del contenedor */
@@ -232,15 +242,28 @@ border-radius: 40px;
 footer {
     background: linear-gradient(135deg, #2c2c2e, #443c4b);
     padding: 2rem 2rem 2rem 2rem;
-    margin: 2rem 0rem 2rem 0rem;
+    margin: 2rem 0rem 0rem 0rem;
+    display: flex;
+    flex-direction: row;
 
 }
 
 footer h2 {
-    color: black;
+    color: rgb(255, 255, 255);
     margin: 1rem 0rem 2rem 0rem;
 }
 
+.footer a {
+    color: white; /* Iconos de color blanco */
+    margin: 0 10px; /* Espaciado entre los iconos */
+    font-size: 24px; /* Tamaño de los iconos */
+  }
+
+  .footer a:hover {
+    color: #d1d1d1; /* Color al pasar el mouse sobre los iconos */
+  }
+
+/*!---------whatsapp----------*/
 .whatsapp{
 position:fixed;
 bottom: 50px;    
@@ -248,7 +271,9 @@ right: 50px;
 }
 
 .whatsapp a img{
-    width: 50px; /* Ajusta según sea necesario */
+    width: 60px; /* Ajusta según sea necesario */
+    background-color: rgba(255, 255, 255, 0.319);
+    border-radius: 40px;
 }
 
 

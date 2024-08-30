@@ -1,35 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=".././css/style.css">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <h1>Like 10 "design at heart"</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="portafolio.html">Portafolio</a></li>
-            </ul>
-
-        </nav>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href=".././css/style.css">
+        <title>like10 | "design at heart"</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    
+    <body>
+    
+        <header id="header_og" class="navbar navbar-expand-lg navbar-dark py-4 px-4">
+            <img src="../img/logoblanco.svg" alt="Logo Like10">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item px-1"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item px-1"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item px-1"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item px-1"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item px-1"><a class="nav-link" href="portafolio.html">Portafolio</a></li>
+                </ul>
+            </nav>
+        </header>
     <main>
-        
+        <div class="whatsapp">
+            <a href=""><img src="../img/whatsapp.svg" alt=""></a>
+        </div>
+        <a href="#header_og" class="btn servicio_index text-white">
+            <i class="fa fa-arrow-up text-white me-2"></i>
+            Ir arriba
+        </a>
+    
     </main>
     <footer>
-        <h2>Gracias por visitarnos</h2>
-        <div>
-            <a href="https://web.facebook.com/profile.php?id=61562129246434" target="_blank"><img src="./img/facebook.svg"></a>
-            <a href="https://www.instagram.com/like10_design/" target="_blank"><img src="./img/instagram.svg"></a>
+        <div class="container">
+            <h2 class="mb-2">Gracias por visitarnos</h2>
+            <div class="mb-3">
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram text-white me-3"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i
+                        class="fab fa-facebook-f text-white  me-3"></i></a>
+                <a href="https://www.behance.net" target="_blank"><i class="fab fa-behance text-white  me-3"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i
+                        class="fab fa-linkedin-in text-white  me-3"></i></a>
+            </div>
+            <p class="small">Desarrollado por Like10 2024 &copy;</p>
         </div>
-
     </footer>
 </body>
 </html>
