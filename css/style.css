@@ -12,7 +12,7 @@ body {
     font-family: "poppins", sans-serif !important;
 }
 
-/*!---------Header----------*/
+/*---------Header----------*/
 
 header {
     background: linear-gradient(135deg, #2c2c2e, #443c4b);
@@ -50,7 +50,7 @@ header img {
 /*!---------Fin Header----------*/
 
 
-/*!---------Index----------*/
+/*---------Index----------*/
 
 .boton {
     background: linear-gradient(135deg, #2c2c2e, #443c4b);
@@ -73,7 +73,7 @@ header img {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
 
-    /*!---------hero----------*/
+    /*---------hero----------*/
 
 .hero {
     width: 100%;
@@ -146,7 +146,7 @@ border-radius: 40px;
 
 /*!---------Fin hero----------*/
 
-/*!---------Servicios Section----------*/
+/*---------Servicios Section----------*/
 
 .servicio_index{
     margin: 1rem 1rem 2rem 2rem;
@@ -215,7 +215,7 @@ border-radius: 40px;
 
 
 
-/*!---------Fin Servicios Section----------*/
+/*---------Fin Servicios Section----------*/
 
 .imgclientes {
     width: 100%;
@@ -237,7 +237,7 @@ border-radius: 40px;
 
 }
 
-/*!---------Footer----------*/
+/*---------Footer----------*/
 
 footer {
     background: linear-gradient(135deg, #2c2c2e, #443c4b);
@@ -263,7 +263,7 @@ footer h2 {
     color: #d1d1d1; /* Color al pasar el mouse sobre los iconos */
   }
 
-/*!---------whatsapp----------*/
+/*---------whatsapp----------*/
 .whatsapp{
 position:fixed;
 bottom: 50px;    
@@ -276,6 +276,85 @@ right: 50px;
     border-radius: 40px;
 }
 
+
+/*---------geleria portafolio----------*/
+
+/* Estilos para la galería de imágenes */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.galeria-item {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 100%;
+}
+
+.galeria-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 768px) {
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*---------formulario contact----------*/
+
+
+.contact-form {
+    background: #ffffff07;
+    padding: 4rem;
+    margin: 0 auto;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd22;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(135deg, #2c2c2e, #443c4b);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: linear-gradient(135deg, #443c4b, #2c2c2e);
+}
 
 
 
