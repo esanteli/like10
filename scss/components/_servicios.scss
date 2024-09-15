@@ -1,0 +1,74 @@
+.servicio_index {
+    margin: 1rem 1rem 2rem 2rem;
+    padding: 1rem;
+  
+    h3 {
+      margin: 1rem 0;
+      color: #fff;
+    }
+  
+    p {
+      margin: 3rem 3rem 1rem 0;
+      color: gray;
+    }
+  
+    h4 {
+      margin: 3rem 0 1rem 0;
+      color: gray;
+    }
+  
+    h3, div, h5 {
+      margin: 1rem 0;
+    }
+  }
+  
+  .indexh2 {
+    margin: 1rem 1rem 2rem 2rem;
+  }
+  
+  .nav-item {
+    position: relative;
+  
+    &:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 1px;
+      background-color: #ffffff26;
+      transform: translateX(50%);
+    }
+  }
+  
+  .navimg {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: 2rem 1rem 1rem 0;
+    border-radius: 30px;
+  }
+  
+  .boxservicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  /*---------Fin Servicios Section----------*/
+  
+  .imgclientes, .imgdoblediamante {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: 2rem 1rem 1rem 0;
+  }
+  
+  .imgdoblediamante {
+    width: 60%;
+  }

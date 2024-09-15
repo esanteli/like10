@@ -1,0 +1,22 @@
+/*---------Index----------*/
+
+.boton {
+    background: linear-gradient(135deg, #2c2c2e, #443c4b);
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-top: 15px;
+  
+    &:hover {
+      background: linear-gradient(135deg, #443c4b, #2c2c2e);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    }
+  }

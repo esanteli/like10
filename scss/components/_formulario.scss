@@ -1,0 +1,44 @@
+.contact-form {
+    background: #ffffff07;
+    padding: 4rem;
+    margin: 0 auto;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+  
+    h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #333;
+    }
+  
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #555;
+    }
+  
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #dddddd22;
+      border-radius: 5px;
+    }
+  
+    button {
+      width: 100%;
+      padding: 10px;
+      background: linear-gradient(135deg, #2c2c2e, #443c4b);
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+  
+      &:hover {
+        background: linear-gradient(135deg, #443c4b, #2c2c2e);
+      }
+    }
+  }
