@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /*!---------Reset----------*/
 * {
@@ -20,6 +21,18 @@ body {
     margin: 1rem; }
   .hero {
     height: 100%; } }
+
+.boton, .boton2 {
+  text-decoration: none;
+  color: white; }
+
+.boton {
+  background-color: linear-gradient(135deg, #2c2c2e, #443c4b);
+  border-radius: 12px; }
+
+.boton2 {
+  background-color: #311a70;
+  border-radius: 12px; }
 
 /*---------Index----------*/
 .boton {
@@ -102,7 +115,10 @@ header {
   display: flex; }
   header img {
     width: 90px;
-    height: auto; }
+    height: auto;
+    transition: transform 0.3s ease-in-out; }
+    header img:hover {
+      animation: pulse 1s infinite; }
   header .navbar-brand {
     font-size: 50px; }
   header .nav-link {
@@ -137,21 +153,47 @@ header {
     margin: 3rem 5rem;
     border-radius: 40px;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    transform: translateX(-100%);
+    opacity: 0;
+    animation: slide-in-left 1s ease-out forwards; }
+
+/* animación */
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0; }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
 
 .grid-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 16px; }
-  .grid-container .grid-item {
-    color: white;
-    padding: 5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center; }
-    .grid-container .grid-item:nth-child(1), .grid-container .grid-item:nth-child(2) {
-      grid-column: span 6; }
+
+.grid-item {
+  color: white;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center; }
+  .grid-item:nth-child(1), .grid-item:nth-child(2) {
+    grid-column: span 6; }
+
+.grid-item img {
+  transition: transform 0.3s ease-in-out; }
+  .grid-item img:hover {
+    animation: pulse 1s infinite; }
+
+@keyframes pulse {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.05); }
+  100% {
+    transform: scale(1); } }
 
 .galeria {
   display: grid;
@@ -160,14 +202,16 @@ header {
   .galeria .galeria-item {
     position: relative;
     overflow: hidden;
-    padding-bottom: 100%; }
+    padding-bottom: 100%;
+    border-radius: 30px; }
     .galeria .galeria-item img {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      object-fit: cover; }
+      object-fit: cover;
+      border-radius: 80px; }
 
 .servicio_index {
   margin: 1rem 1rem 2rem 2rem;
@@ -210,9 +254,9 @@ header {
 
 .boxservicios {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start; }
+  align-items: flex-start;
+  flex-direction: column; }
 
 /*---------Fin Servicios Section----------*/
 .imgclientes, .imgdoblediamante {

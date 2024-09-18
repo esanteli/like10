@@ -1,0 +1,60 @@
+//* VARIABLES
+$color-principal: black;
+$color-secundario: grey;
+$degradado-principal: linear-gradient(135deg, #2c2c2e, #443c4b);
+$degradado-principal-hover: linear-gradient(135deg,  #443c4b, #2c2c2e);
+
+//* LISTAS
+$colores: white, #2c2c2e, hsl(256, 62%, 27%), #bff0dd;
+$font: 20px, 25px, 35px, 45px;
+
+//* MAPAS
+$boton:(
+    //* key - value
+    bg-color: $degradado-principal,
+    border-radius: 12px,
+    color-text: white,
+); 
+
+//*EXTENDS
+
+%enlaces{
+    text-decoration: none;
+    color: rgb(255, 255, 255);   
+}
+
+.boton{
+    background-color: $degradado-principal;
+    border-radius: 12px;
+    @extend %enlaces;
+}
+
+.boton2{
+    background-color: nth($colores, 3);
+    border-radius: 12px;
+    @extend %enlaces;
+}
+
+//* MIXIN
+
+@mixin flex($flex, $justify, $align, $flex-direction) {
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $flex-direction; }
+
+@mixin space($margin, $padding) {
+    margin: $margin;
+    padding: $padding;
+    }
+    
+
+
+
+
+
+
+
+
+
+

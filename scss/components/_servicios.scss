@@ -1,6 +1,5 @@
 .servicio_index {
-    margin: 1rem 1rem 2rem 2rem;
-    padding: 1rem;
+  @include space(1rem 1rem 2rem 2rem, 1rem);
   
     h3 {
       margin: 1rem 0;
@@ -52,10 +51,7 @@
   }
   
   .boxservicios {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
+    @include flex(flex, space-between, flex-start, column);
   }
   
   /*---------Fin Servicios Section----------*/
