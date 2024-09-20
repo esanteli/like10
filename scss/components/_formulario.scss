@@ -1,5 +1,7 @@
 .contact-form {
     background: #ffffff07;
+    -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
     padding: 4rem;
     margin: 0 auto;
     max-width: 600px;

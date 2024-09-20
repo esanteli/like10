@@ -1,13 +1,13 @@
 .galeria {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 15px;
   
     .galeria-item {
       position: relative;
       overflow: hidden;
       padding-bottom: 100%;
-      border-radius: 30px;
+      border-radius: 15px;
   
       img {
         position: absolute;
@@ -16,7 +16,68 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        border-radius: 80px;
+        border-radius: 15px;
       }
     }
   }
+
+.gridcuatro {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 25px;
+    height: auto;
+    padding: 20px;
+}
+
+.square {
+    border-radius: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    width: auto;
+}
+
+.square1 {
+  background: $degradado-principal-hover;
+    font-size: 18px;
+    color: white;
+    text-align: left;
+    padding: 2rem;
+}
+
+.square2 {
+  background: $degradado-principal-hover;
+  font-size: 18px;
+  color: white;
+  text-align: left;
+  padding: 2rem;
+}
+
+.square3 {
+    background: $degradado-principal;
+    font-size: 18px;
+    color: white;
+    text-align: left;
+    padding: 2rem;
+}
+
+.square4 {
+    background: $degradado-principal;
+    font-size: 18px;
+    color: white;
+    text-align: left;
+    padding: 2rem;
+}
+
+.frameresponsive {
+  display: flex;
+  flex-direction: column;
+  width: 75%; 
+  height: auto;
+  aspect-ratio: 16/9;
+  border: none; 
+}

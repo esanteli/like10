@@ -18,3 +18,17 @@
       height: 100%;
     }
   }
+
+  @media (max-width: 768px) {
+    .gridcuatro {
+      grid-template-columns: 1fr;
+
+    }
+  
+    .square {
+      grid-column: span 6;
+      margin: 1rem;
+      height: 100%;
+    }
+
+  }
