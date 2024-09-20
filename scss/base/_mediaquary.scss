@@ -2,7 +2,11 @@
     .galeria {
       grid-template-columns: 1fr;
     }
+  
+  .galeria-item {
+    grid-column: span 8;
   }
+}
 
   @media (max-width: 768px) {
     .grid-container {
@@ -22,6 +26,7 @@
   @media (max-width: 768px) {
     .gridcuatro {
       grid-template-columns: 1fr;
+
 
     }
   
