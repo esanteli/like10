@@ -18,7 +18,10 @@
         object-fit: cover;
         border-radius: 15px;
       }
+
+      
     }
+    
   }
 
 .gridcuatro {
@@ -80,4 +83,16 @@
   height: auto;
   aspect-ratio: 16/9;
   border: none; 
+}
+
+.tag {
+  position: absolute;
+  bottom: 10px; // Ajusta la distancia desde la parte inferior
+  left: 10px; // Ajusta la distancia desde la parte izquierda
+  background-color: $color-secundario;// Fondo semitransparente para que el texto sea legible
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px; // Ajusta el tamaño del texto según sea necesario
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
